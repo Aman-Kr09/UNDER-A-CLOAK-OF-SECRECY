@@ -1,4 +1,15 @@
+# EVILSTASH
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Features
+
+- **Next.js 15** with Turbopack for fast development
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **Mongoose** for MongoDB integration
+- **Zod** for schema validation
+- User authentication schemas and models
 
 ## Getting Started
 
@@ -18,7 +29,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+- `src/app/model/` - Database models (User model)
+- `src/app/schemas/` - Zod validation schemas
+  - `signUpSchema.ts` - User registration validation
+  - `signInSchema.ts` - User login validation
+  - `verifySchema.ts` - Email verification validation
+  - `messageSchema.ts` - Message validation
+  - `acceptMessageSchema.ts` - Accept message validation
 
 ## Learn More
 
